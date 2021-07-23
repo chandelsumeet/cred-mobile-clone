@@ -1,0 +1,260 @@
+/* Global Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+/* Global css */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+:root {
+  --primary-black: rgb(15, 15, 15);
+  --primary-white: rgb(248, 248, 248);
+  --secondary-white: rgb(255, 255, 255);
+  --primary-gray: rgb(15, 15, 15);
+  --nav-color: rgba(0, 0, 0, 0.8);
+  --dark-grey: rgb(33, 36, 38);
+}
+body {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.2;
+}
+.btn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  max-height: 100%;
+}
+ul {
+  list-style: none;
+}
+p {
+  margin-bottom: 1.5rem;
+}
+.primary-link,.primary-link:hover {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: var(--secondary-white);
+  color: var(--primary-black);
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 2rem 0;
+  vertical-align: center;
+}
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: var(--primary-white);
+  line-height: 0.9;
+}
+.footer-title {
+  color: var(--primary-white);
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.common-section {
+  padding: 5rem 2rem;
+  height: 100vh;
+}
+.detail {
+  color: var(--primary-white);
+}
+/* Header Start */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2.5rem 2rem;
+  align-items: center;
+  background-color: var(--primary-black);
+  position: sticky;
+  width: 100%;
+}
+.cred-logo {
+  width: 2.5rem;
+  height: auto;
+}
+.header-link-download,.header-link-download:hover,.header-link-download:focus {
+  border: 1px solid var(--primary-white);
+  border-radius: 1rem;
+  display: block;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+  color: var(--primary-white);
+}
+/* Navbar start */
+nav {
+  display: none;
+}
+/* Navbar End */
+
+/* Header End */
+
+/* Section Hero Start */
+.hero {
+  padding: 7rem 2rem;
+  background: var(--primary-black);
+  margin: -1px;
+}
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: var(--primary-white);
+  line-height: 0.9;
+}
+/* Section Hero End */
+/* Mobile display start */
+.mobile-display {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(12, 50px);
+  background: var(--primary-black);
+}
+.mobile-center {
+  grid-row: 6/-1;
+  grid-column: 5/10;
+  position: relative;
+  z-index: 5;
+}
+.mobile-left1 {
+  grid-row: 7/-1;
+  grid-column: 3/6;
+  position: relative;
+  z-index: 2;
+}
+.mobile-left2 {
+  grid-row: 8/-1;
+  grid-column: 1/4;
+}
+.mobile-right1 {
+  grid-row: 7/-1;
+  grid-column: 9/12;
+  position: relative;
+  z-index: 2;
+}
+.mobile-right2 {
+  grid-row: 8/-1;
+  grid-column: 11/-1;
+}
+/* Mobile display end */
+/* Rewards Section start */
+.rewards-section {
+  background: url("./images/deserve-more-bg-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--primary-white);
+}
+/* Rewards Section end */
+/* Brands mobile start */
+.brands-mobile {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.brands-mobile p {
+  font-weight: 900;
+  color: var(--dark-grey);
+}
+/* Brands mobile start */
+
+/* Money Matters Start */
+.money-matters {
+  background: url("./images/money-matters-bg-mobile.jpg");
+  background-size: cover;
+  height: 100vh;
+  padding-top: 5rem;
+}
+
+/* Money Matters End */
+/* feature start */
+.feature {
+  background-color: var(--primary-black);
+  padding: 5rem 2rem;
+}
+.custom-mobile {
+  margin: 7rem auto;
+  background: var(--dark-grey);
+  height: 600px;
+  width: 300px;
+  border-radius: 50px;
+  display: grid;
+  justify-items: center;
+  box-shadow: rgb(176 176 178 / 16%) 0px -5px 6px 0px inset,
+    rgb(0 0 0 / 24%) 4px 6px 11px 1px inset;
+}
+/* feature end */
+/* Security Section start */
+.security {
+  padding: 7rem 2rem;
+  background: url("./images/security-bg-mobile.jpg");
+}
+/* Security Section end */
+/* story start */
+.story {
+  padding: 7rem 2rem;
+  background: url("./images/trust-bg-mobile.jpg");
+}
+/* story end */
+/* rating start */
+.star-rating
+{
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 1rem;
+}
+.rating-grid
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.rating
+{
+  display: grid;
+  text-align: center;
+  background: var(--primary-black);
+  padding: 3rem 1rem;
+
+}
+.rating-text 
+{
+  font-size: 5rem;
+  color: var(--primary-white);
+  font-weight: bold;
+}
+.store-name
+{
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+.rating i
+{
+  font-size: 1.2rem;
+  color: var(--primary-white);
+}
+.slider
+{
+  margin-top: 3rem;
+}
+.carousel-item
+{
+  color: #fff;
+}
+/* rating end */
